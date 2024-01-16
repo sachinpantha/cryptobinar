@@ -67,6 +67,29 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					}
+				],
+				"name": "resellSeat",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
@@ -161,11 +184,11 @@
 	},
 	"sources": {
 		"cryptobinar.sol": {
-			"keccak256": "0x97c182f7d152ed7cfc6a910714f24b47d96c7dc1a82cc363cb4444be4b191568",
+			"keccak256": "0xcfd5e5e7890378ce797ada4d097c2993ba22ec8b2f0aa64695d073a41c1c4903",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f5f1f93c27514eeb48c4424c437374c6283cf32ab74066b961cf562f1bf48e85",
-				"dweb:/ipfs/QmerzJmAizrTZLVVBFDbce5y6J5HmHCeuFdJSw814j4jWg"
+				"bzz-raw://c75d3a58a32f71f7243ce881230f1ff7c07baa9d201863a1f3507234c28b8208",
+				"dweb:/ipfs/QmebJFWoVHZXjAq4NsR3nLetkU4eBHGHD9cuL5QYkkH3HG"
 			]
 		}
 	},

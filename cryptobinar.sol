@@ -32,7 +32,16 @@ contract cryptobinar {
         require(msg.value == (_workshop.registrationFee * quantity), "Not enough ethers");
         require(_workshop.seatCount>= quantity,"Not enough seats available");
         _workshop.seatRemaining-=quantity;
-        
+        seats[msg.sender][id]+=quantity;
+    }
+
+    function resellSeat(uint id, uint quantity, address to) external {
+        require(workshops[id].date!=0 , "This workshop does not exist");
+        require(workshops[id].date > block.timestamp, "Workshop already accomplished" );
+        require(seats[msg.sender][id]> quantity,"Not enough seats to resell");
+        seats[msg.sender][id]-=quantity;
+        seats[to][id]+=quantity;
+
 
     }
 
